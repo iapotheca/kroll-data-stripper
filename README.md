@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/iapotheca_logo.jpg" width="400"></p>
+
 # kroll-data-stripper
 This will take the RxForDrugDoctorGroups report and takes out all the data other than Din, Fill Date, Fill Quantity, and Rx#
 
