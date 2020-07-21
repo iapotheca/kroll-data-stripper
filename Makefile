@@ -7,5 +7,5 @@ run:
 	go run main.go
 package:
 	make build
-	copy LICENSE.md bin\LICENSE.md
+	copy LICENSE bin\LICENSE
 	copy README.md bin\README.md
