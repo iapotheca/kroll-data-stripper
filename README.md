@@ -4,13 +4,30 @@
 This will take the RxForDrugDoctorGroups report and takes out all the data other than Din, Fill Date, Fill Quantity, and Rx#
 
 ## Installation
-Create a folder - call it what ever you'd like.
+1. Create a folder - call it what ever you'd like.
 
+<p align="center"><img src="docs/Create-Folder.gif" width="400"></p>
+
+2. Drag the binary (.exe file) from /bin into the new folder
+
+<p align="center"><img src="docs/DragFromBin.gif" width="400"></p>
+Something to note in golang is that it's all self-contained binaries, which means no installing dependencies.
 
 ## Usage
 
+1. Drag your RxForDrugDoctorGroups file into your processor folder
 
-## How To Build
+<p align="center"><img src="docs/DragFileIntoFolder.gif" width="400"></p>
+
+2. Run the program (double click)
+<p align="center"><img src="docs/RunProgram.gif" width="400"></p>
+
+3. See the output without any patient info
+<p align="center"><img src="docs/csvoutput.png" width="400"></p>
+
+4. Upload the processed file to the iApotheca Platform
+
+## How To Build The Binary
 This uses standard golang build process.
 
 Make sure you have golang installed on your system first. - https://golang.org/
