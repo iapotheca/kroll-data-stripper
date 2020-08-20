@@ -46,11 +46,20 @@ func main() {
 		log.Fatal(err)
 	}
 
+
+	//This block of code is to rename the original file to "delete-{original file name}.csv"
 	// Let's prefix the selected file with "delete-" so the user knows it's safe to delete the file now
-	newFileName := fmt.Sprintf("delete-%s", selectedFile)
-	fmt.Println("Renaming ", selectedFile, " to ", newFileName)
-	err = os.Rename(selectedFile, newFileName)
-	if err != nil {
+	//newFileName := fmt.Sprintf("delete-%s", selectedFile)
+	//fmt.Println("Renaming ", selectedFile, " to ", newFileName)
+	//err = os.Rename(selectedFile, newFileName)
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+
+
+	//This block of code is to delete the original file
+	//Now let's delete the original file - selectedFile
+	if err =  os.Remove(selectedFile); err != nil {
 		log.Fatal(err)
 	}
 

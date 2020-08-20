@@ -92,5 +92,7 @@ func ReadKrollCSV(file string) ([]Record, error) {
 		}
 	}
 
+	csvFile.Close()
+
 	return records, nil
 }
